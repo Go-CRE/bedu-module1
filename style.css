@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap');
+body{
+	background-color: #c8cdb6;
+}
+header {
+	margin: 40px 20px 20px;
+	font-size: 0;
+	height: 45px;
+	font-family: sans-serif;
+}
+header > *{
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	height: 100%;
+	line-height: 45px;
+}
+li{
+	display: inline;
+	padding: 12.5px;
+	
+}
+.logo > img{
+	height: 60px;
+	width: 60px;
+}
+.logo {
+	width: 15%;
+}  
+.navbar {
+	width: 70%;
+	text-align: center;
+	color: #025157;
+}  
+.actions {
+	display: inline;
+	width: 15%;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 5px;
+}
+div a{
+	color: #67b54b;
+}
+div button{
+	color:#fff;
+	background-color: #67b54b;
+	margin: 14px 14px 12px 12px;
+	border-radius: 5px;
+	border: none;
+}
+.main{
+	margin-top: 40px;
+	text-align: center;
+}
+h1{
+	color: #025157;
+	text-align: center;
+	font-family: Pacifico;
+}
+
+p{
+	color: #46484c;
+	font-family: batang;
+	font-size: 20px;
+	font-family: Shadows Into Light;
+}
+
+strong{
+	color: #8b8b8bcc;
+}
+
+button{
+	background-color: #025157;
+	color: #fff;
+}
+.image{
+	height: 30%;
+	width: 50%;
+}

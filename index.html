@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>FullStack Js</title>
+</head>
+<body>
+	<header class="header">
+		<a href="#" class="logo">
+			<img src="logo.png" alt="Logo Bedu">
+		</a>
+		<nav class="navbar">
+			<ul>
+				<a href="#"><li>Inicio</li></a>
+				<a href="#"><li>Informacion</li></a>
+				<a href="#"><li>Nosotros</li></a>
+				<a href="#"><li>Contacto</li></a>
+			</ul>
+		</nav>
+		<div class="actions">
+			<a href="login.html">Registro</a>
+			<button type="submit">Iniciar Prueba</button>
+		</div>
+	</header>
+	<section class="main">
+		<h1>Construye tu blog. Contruye tu negocio</h1>
+		<p><strong>Todo </strong>lo que necesitas saber...</p>
+		<p>Encuentra información <strong>24/7</strong></p>
+		<form>
+			<input type="mail" name="mail" placeholder="correo@dominio.com">
+			<button type="submit">Prueba ahora &rarr;</button>
+		</form>
+		<p><strong>NO</strong> requieres tarjeta.</p>
+		<img src="https://th.bing.com/th/id/R.e21e88bd6c86938e69766260279c6f63?rik=RfANOgG0g4Lpfg&riu=http%3a%2f%2fpestleanalysis.com%2fwp-content%2fuploads%2f2016%2f03%2fbusiness-plan.jpg&ehk=w6q6haDxh0qwqD6BD3QFfv6F0MRmFCcUbA4kGqQeykU%3d&risl=&pid=ImgRaw&r=0" alt="Bussines Plan" class="image">
+	</section>
+	<section class="video">
+		<video src="video.mp4" type="video/mp4" width="320" height="240" id="video1" ></video>
+		<div>
+			<button onclick="playpause()">&#9658;/||</button>
+			<button onclick="stop()">&#9726;</button>
+			<button onclick="skip(-3)">&lt;&lt;</button>
+			<button onclick="skip(3)">&gt;&gt;</button>
+		</div>
+		<script>
+			var miVideo = document.getElementById("video1");
+			function playpause(){
+				if(miVideo.paused)
+					miVideo.play();
+					else miVideo.pause();
+			}
+			function stop(){
+				miVideo.pause();
+				mivideo.currentTime = 0;
+			}
+			function skip(value){
+				mivideo.currentTime += value;
+			}
+		</script>
+	</section>
+</body>
+</html>
