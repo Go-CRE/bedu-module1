@@ -7,22 +7,24 @@
 	<title>FullStack Js</title>
 </head>
 <body>
-	<header class="header">
-		<a href="#" class="logo">
-			<img src="logo.png" alt="Logo Bedu">
-		</a>
-		<nav class="navbar">
-			<ul>
-				<a href="#"><li>Inicio</li></a>
-				<a href="#"><li>Informacion</li></a>
-				<a href="#"><li>Nosotros</li></a>
-				<a href="#"><li>Contacto</li></a>
-			</ul>
-		</nav>
-		<div class="actions">
-			<a href="login.html">Registro</a>
-			<button type="submit">Iniciar Prueba</button>
-		</div>
+	<section class="header-fix">
+		<header class="header">
+			<a href="#" class="logo">
+				<img src="resources/logo.png" alt="Logo Bedu">
+			</a>
+			<nav class="navbar">
+				<ul>
+					<a href="#"><li>Inicio</li></a>
+					<a href="#"><li>Informacion</li></a>
+					<a href="#"><li>Nosotros</li></a>
+					<a href="#"><li>Contacto</li></a>
+				</ul>
+			</nav>
+			<div class="actions">
+				<a href="login.html">Registro</a>
+				<button type="submit">Iniciar Prueba</button>
+			</div>
+	</section>
 	</header>
 	<section class="main">
 		<h1>Construye tu blog. Contruye tu negocio</h1>
@@ -35,29 +37,22 @@
 		<p><strong>NO</strong> requieres tarjeta.</p>
 		<img src="https://th.bing.com/th/id/R.e21e88bd6c86938e69766260279c6f63?rik=RfANOgG0g4Lpfg&riu=http%3a%2f%2fpestleanalysis.com%2fwp-content%2fuploads%2f2016%2f03%2fbusiness-plan.jpg&ehk=w6q6haDxh0qwqD6BD3QFfv6F0MRmFCcUbA4kGqQeykU%3d&risl=&pid=ImgRaw&r=0" alt="Bussines Plan" class="image">
 	</section>
-	<section class="video">
-		<video src="video.mp4" type="video/mp4" width="320" height="240" id="video1" ></video>
-		<div>
-			<button onclick="playpause()">&#9658;/||</button>
-			<button onclick="stop()">&#9726;</button>
-			<button onclick="skip(-3)">&lt;&lt;</button>
-			<button onclick="skip(3)">&gt;&gt;</button>
+	<section class="promo">
+		<div class="video">
+			<video controls>
+				<source src="resources/video.mp4" type="video/mp4" >
+			</video>
+			<img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
+				   alt="See how it works"/>
 		</div>
-		<script>
-			var miVideo = document.getElementById("video1");
-			function playpause(){
-				if(miVideo.paused)
-					miVideo.play();
-					else miVideo.pause();
-			}
-			function stop(){
-				miVideo.pause();
-				mivideo.currentTime = 0;
-			}
-			function skip(value){
-				mivideo.currentTime += value;
-			}
-		</script>
+		<div class="publi">
+			<h2>Coloca videos con un solo click</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel corporis architecto tenetur omnis labore amet magni repellat dignissimos, veniam, commodi aspernatur, rerum laudantium similique quasi iure quidem. Aperiam, ad ex.</p>
+			<form>
+				<input type="mail" name="mail" placeholder="correo@dominio.com">
+				<button type="submit">Prueba ahora &rarr;</button>
+			</form>
+		</div>
 	</section>
 </body>
 </html>
